@@ -77,6 +77,8 @@ The Docker image is tagged and pushed to the Amazon ECR repository :-
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
 ```
+![repo](https://github.com/sudhajobs0107/cicd-GitHub-Actions-2-AWS-ECS/blob/main/images/repo.png)
+![image](https://github.com/sudhajobs0107/cicd-GitHub-Actions-2-AWS-ECS/blob/main/images/image.png)
 # 4. Fill new image
 ```
 - name: Fill in the new image ID in the Amazon ECS task definition
@@ -98,6 +100,9 @@ The ECS service is updated with the new image. The deployment ensures zero downt
     cluster: ${{ secrets.ECS_CLUSTER_NAME }}
     wait-for-service-stability: true
 ```
+![cluster](https://github.com/sudhajobs0107/cicd-GitHub-Actions-2-AWS-ECS/blob/main/images/cluster.png)
+![service](https://github.com/sudhajobs0107/cicd-GitHub-Actions-2-AWS-ECS/blob/main/images/service.png)
+![task](https://github.com/sudhajobs0107/cicd-GitHub-Actions-2-AWS-ECS/blob/main/images/task.png)
 # 6. Integration Tests
 Post-deployment, integration tests are run to verify the application's functionality :-
 ```
@@ -119,7 +124,11 @@ If the integration tests fail, the pipeline automatically rolls back to the prev
 https://github.com/sudhajobs0107/cicd-GitHub-Actions-2-AWS-ECS.git
 
 # Pipeline Execution Snapshots
-(Include snapshots of each job and step from the GitHub Actions pipeline here)
-
+# 1. Task Definition
+![TD](https://github.com/sudhajobs0107/cicd-GitHub-Actions-2-AWS-ECS/blob/main/images/task-definition.png)
+# 2. Cluster Overview
+![CO](https://github.com/sudhajobs0107/cicd-GitHub-Actions-2-AWS-ECS/blob/main/images/cluster-overview.png)
+# 3. Deploy Summary
+![Deploy]()
 # Conclusion
 This CI/CD pipeline provides a robust solution for automating the deployment and management of applications on AWS ECS. With integrated testing and rollback features, it ensures that your application remains reliable and resilient in production.
