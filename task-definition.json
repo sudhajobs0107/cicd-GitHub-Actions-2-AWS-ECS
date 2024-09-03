@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:766280907974:task-definition/simple-deploy:12",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:766280907974:task-definition/simple-deploy:14",
     "containerDefinitions": [
         {
             "name": "simple-deploy",
@@ -36,9 +36,10 @@
         }
     ],
     "family": "simple-deploy",
+    "taskRoleArn": "arn:aws:iam::766280907974:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::766280907974:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 12,
+    "revision": 14,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -56,6 +57,9 @@
         },
         {
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
         },
         {
             "name": "ecs.capability.execution-role-ecr-pull"
@@ -84,7 +88,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-09-03T10:44:33.353Z",
+    "registeredAt": "2024-09-03T11:07:47.242Z",
     "registeredBy": "arn:aws:iam::766280907974:root",
     "tags": []
 }
