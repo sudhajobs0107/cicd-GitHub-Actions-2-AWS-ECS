@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:766280907974:task-definition/simple-deploy:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:766280907974:task-definition/simple-deploy:3",
     "containerDefinitions": [
         {
             "name": "simple-deploy",
@@ -7,7 +7,7 @@
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "simple-deploy-80-tcp",
+                    "name": "container-port-1",
                     "containerPort": 80,
                     "hostPort": 80,
                     "protocol": "tcp",
@@ -38,7 +38,7 @@
     "family": "simple-deploy",
     "executionRoleArn": "arn:aws:iam::766280907974:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 3,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -84,7 +84,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-09-02T15:59:34.337Z",
+    "registeredAt": "2024-09-03T04:51:53.139Z",
     "registeredBy": "arn:aws:iam::766280907974:root",
     "tags": []
 }
