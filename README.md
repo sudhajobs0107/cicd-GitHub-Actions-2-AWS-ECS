@@ -129,6 +129,6 @@ https://github.com/sudhajobs0107/cicd-GitHub-Actions-2-AWS-ECS.git
 # 2. Cluster Overview
 ![CO](https://github.com/sudhajobs0107/cicd-GitHub-Actions-2-AWS-ECS/blob/main/images/cluster-overview.png)
 # 3. Deploy Summary
-![Deploy]()
+![Deploy](https://github.com/sudhajobs0107/cicd-GitHub-Actions-2-AWS-ECS)
 # Conclusion
 This CI/CD pipeline provides a robust solution for automating the deployment and management of applications on AWS ECS. With integrated testing and rollback features, it ensures that your application remains reliable and resilient in production.
