@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:766280907974:task-definition/simple-deploy:3",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:766280907974:task-definition/simple-deploy:7",
     "containerDefinitions": [
         {
             "name": "simple-deploy",
-            "image": "766280907974.dkr.ecr.us-east-1.amazonaws.com/simple-deploy",
+            "image": "766280907974.dkr.ecr.us-east-1.amazonaws.com/simple-deploy:7c75fc06ae508ff7b9f7f2404913edd0e467a306",
             "cpu": 0,
             "portMappings": [
                 {
@@ -16,10 +16,8 @@
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
-            "ulimits": [],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
@@ -29,8 +27,7 @@
                     "max-buffer-size": "25m",
                     "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
-                },
-                "secretOptions": []
+                }
             },
             "systemControls": []
         }
@@ -38,7 +35,7 @@
     "family": "simple-deploy",
     "executionRoleArn": "arn:aws:iam::766280907974:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 3,
+    "revision": 7,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -84,7 +81,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-09-03T04:51:53.139Z",
-    "registeredBy": "arn:aws:iam::766280907974:root",
+    "registeredAt": "2024-09-03T05:52:55.331Z",
+    "registeredBy": "arn:aws:iam::766280907974:user/nihal",
     "tags": []
 }
